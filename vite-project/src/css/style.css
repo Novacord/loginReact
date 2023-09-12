@@ -1,0 +1,128 @@
+/* General */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Formulario */
+
+.login-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+    p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: green;
+    color: #fff;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+    .entro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: red;
+    color: #fff;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+  }
+
+@media (max-width: 576px) {
+  .login-form {
+    width: 100%;
+    max-width: none;
+    padding: 10px;
+  }
+}
+
+/* Etiquetas */
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Campos de entrada */
+
+.login-form input {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.login-form input[type="text"] {
+  background-color: #fff;
+}
+
+.login-form input[type="password"] {
+  background-color: #fff;
+}
+
+/* Botón */
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: darken(#007bff, 10%);
+}
+
+/* Mensajes de error */
+
+.login-form .error {
+  color: red;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 576px) {
+  .login-form .error {
+    font-size: 12px;
+  }
+}
+
